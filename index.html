@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hydraCal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="lol">
+        <div class="arduinoProj">
+        <div class="headache">
+            <img src="hydraEmblem.webp" id="changeable-image" alt="Changeable Image">
+            <button class="change-image">Coin</button>
+            <select id="page-dropdown">
+                <option value="cal">Calculator</option>
+                <option value="slope">Slope</option>
+              </select>
+              
+        </div>
+
+        <div id="content">
+            <div id="code-container">
+              <button id="toggle-button">hydraCal - Quadruple Calculator</button>
+              <div class="main">
+                <div class="container">
+                    <div class="cal">
+                        <input type="text" id="display" readonly>
+                    <div class="button-grid">
+                        <button class="buttonc">7</button>
+                        <button class="buttonc">8</button>
+                        <button class="buttonc">9</button>
+                        <button class="buttonc">/</button>
+                        <button class="buttonc">4<c/button>
+                        <button class="buttonc">5</button>
+                        <button class="buttonc">6</button>
+                        <button class="buttonc">*</button>
+                        <button class="buttonc">1</button>
+                        <button class="buttonc">2</button>
+                        <button class="buttonc">3</button>
+                        <button class="buttonc">-</button>
+                        <button class="buttonc">0</button>
+                        <button class="buttonc">.</button>
+                        <button class="buttonc">+</button>
+                        <button class="buttonc"><i class="fa-solid fa-delete-left"></i> </button>
+                        <button class="buttonc">C</button>
+                        <button class="buttonc">=</button>
+                    </div>
+                    </div>
+                    <div class="slope">
+                        <h1>Slope Calculator</h1>
+                        <form>
+                         <label for="x1">X1:</label>
+                         <input type="number" id="x1" value="" required><br><br>
+                         <label for="y1">Y1:</label>
+                         <input type="number" id="y1" value="" required><br><br>
+                        <label for="x2">X2:</label>
+                         <input type="number" id="x2" value="" required><br><br>
+                         <label for="y2">Y2:</label>
+                         <input type="number" id="y2" value="" required><br><br>
+
+                         <div class="buttonSlope">
+                            <button id="calculate">Calculate Slope</button>
+                         <button id="clear">Clear</button>
+                         </div>
+
+                         <p id="result"></p>
+                         </form>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <nav class="navbar">
+            <ul class="nav-links">
+              <li><a href="https://www.facebook.com/JSEPH.Dz" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://www.instagram.com/rai.hiroaki/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://github.com/exxojs" target="_blank"><i class="fab fa-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/john-diaz-910454313/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+          </nav>
+    </div>
+    </div>
+
+    <footer>
+        <img src="ticket.webp" alt="riptide" style="height: 100px;" id="dante">
+    </footer>
+
+    <div class="bottom">
+        <h1>hydraCal.js - CS:GO Operation Hydra 2017 Inspired Project <br>Made by: Joseph Diaz <br><font color="#f2bf30">=In progress=</font></h1>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/92839e2d3d.js" crossorigin="anonymous"></script>
+</body>
+</html>
