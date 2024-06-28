@@ -130,14 +130,14 @@ function calculateStats() {
   <div class="result-container">
     <div class="result-item">
       <h4>Mean</h4>
-      <p><span class="ellipsis"></span>${mean.toFixed(2)}</p>
+      <p><span class="ellipsis"></span>${mean.toFixed(2)} is the dataset average</p>
     </div>
     <div class="result-item">
       <h4>Median</h4>
-      <p><span class="ellipsis"></span>${median}</p>
+      <p><span class="ellipsis"></span>${median} is the middle number in an ascending order of the provided list</p>
     </div>
     <div class="result-item">
-      <h4>Mode</h4>
+      <h4>Mode <br>(Most common number)</h4>
       <p><span class="ellipsis"></span>${mode}</p>
     </div>
   </div>
@@ -164,7 +164,7 @@ function calculateMode(arr) {
   });
   const maxFrequency = Math.max(...Object.values(frequencyMap));
   const modes = Object.keys(frequencyMap).filter(key => frequencyMap[key] === maxFrequency);
-  return modes.length === 1? modes[0] : 'No unique mode';
+  return modes.length === 1? modes[0] : 'There is no most commonly occurring number';
 }
 
 //===============================================
