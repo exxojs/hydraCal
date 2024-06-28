@@ -92,7 +92,7 @@ body {
     font-size: 16px;
     background: rgba(255, 255, 255, 0.158);
     color: #fff;
-    margin-right: -160px;
+    margin-right: -100px;
   }
   
   #page-dropdown {
@@ -224,7 +224,7 @@ body {
   color: #fff;
   font-weight: bold;
   padding: 10px 20px;
-  border: solid #b2f02c 3px;
+  border: solid #a0da2d 3px;
   border-radius: 0;
   cursor: pointer;
   font-size: 20px;
@@ -265,6 +265,7 @@ body {
 
 .slope h1{
   margin-top: -30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.596);
 }
 
 /* Form Styles */
@@ -276,7 +277,7 @@ form {
   border-top: solid #b2f02c 2px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  text-align: center;
+  text-align: left;
 }
 
 label {
@@ -292,16 +293,17 @@ input[type="number"] {
   width: 80%;
   height: 30px;
   padding: 10px;
-  font-size: 18px;
+  font-size: 24px;
   border: none;
   background-color: transparent;
-  color: #0e0a0a;
+  color: white;
   border-bottom: solid white 1px;
 }
 
 input[type="number"]:focus {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border: solid #b2f02c 2px;
+  color: white;
 }
 
 .buttonSlope {
@@ -347,6 +349,99 @@ input[type="number"]:focus {
   margin-top: 20px;
   text-align: center; /* added */
 }
+
+/*===============================================*/
+.mmm {
+  width: 90%;
+  margin-top: 10px;
+  margin-bottom: -5px;
+  display: none;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: left;
+}
+
+.mmm h1{
+  margin-top: -30px;
+  text-align: center;
+  font-size: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.596);
+}
+
+#bombaclat {
+  width: 100%;
+  padding: 20px;
+  background-color: #16150f7e;
+  border-top: solid #b2f02c 2px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.gyat{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="text"] {
+  display: inline-block;
+  width: 80%;
+  height: 30px;
+  padding: 10px;
+  font-size: 24px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  border-bottom: solid white 1px;
+  text-align: left;
+}
+
+input[type="text"]:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: solid #b2f02c 2px;
+  color: white;
+  text-align: left;
+}
+
+#resultMMM {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.result-container {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  border-bottom: solid #8ae22d 1px;
+  border-right: solid #b2f02c 1px;
+  padding-top: 0;
+}
+
+.result-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* adjust the margin to your liking */
+}
+
+.result-item h4 {
+  margin-right: 10px; /* adjust the margin to your liking */
+  font-size: 20px;
+  color: #f2bf30;
+}
+
+.result-item p {
+  margin: 0;
+  text-align: right;
+}
+
+
 /*===============================================*/
   
   /* For small screens (e.g. mobile devices) */
@@ -466,3 +561,4 @@ input[type="number"]:focus {
         margin-right: 10px;
       }
   }
+  
