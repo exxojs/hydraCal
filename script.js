@@ -2,22 +2,32 @@ const pageDropdown = document.getElementById('page-dropdown');
 const calDiv = document.querySelector('.cal');
 const slopeDiv = document.querySelector('.slope');
 const mDiv = document.querySelector('.mmm');
+const triDiv = document.querySelector('.triangle');
 
 pageDropdown.addEventListener('change', () => {
   if (pageDropdown.value === 'cal') {
     slopeDiv.style.display = 'none';
     calDiv.style.display = 'block';
     mDiv.style.display = 'none';
+    triDiv.style.display = 'none';
   } 
   else if (pageDropdown.value === 'M') {
     slopeDiv.style.display = 'none';
     calDiv.style.display = 'none';
     mDiv.style.display = 'flex';
+    triDiv.style.display = 'none';
+  } 
+  else if (pageDropdown.value === 'Scalene') {
+    slopeDiv.style.display = 'none';
+    calDiv.style.display = 'none';
+    mDiv.style.display = 'none';
+    triDiv.style.display = 'flex';
   } 
   else {
     calDiv.style.display = 'none';
     slopeDiv.style.display = 'flex';
     mDiv.style.display = 'none';
+    triDiv.style.display = 'none';
   }
 });
 //===============================================
@@ -177,3 +187,40 @@ button.addEventListener('click', () => {
   imageIndex = (imageIndex + 1) % images.length;
   image.src = images[imageIndex];
 });
+//===============================================
+function calculateAngles() {
+  const angleInput = document.getElementById("angle");
+  const angleValue = parseInt(angleInput.value);
+
+  if (angleValue < 1 || angleValue > 178) {
+    alert("Invalid angle value. Please enter a value between 1 and 178.");
+    return;
+  }
+
+  // Calculate remaining inner angles
+  const angle1 = angleValue;
+  const angle2 = Math.floor(Math.random() * (180 - angleValue - 1)) + 1;
+  //Math.floor is for Math things in JavaScript and here it rounds the result of multiplication down to the
+    //nearest integer using Math.floor() as a function
+
+  //Math.random generates a random number 
+
+  //The Math.random() * (180 - angleValue - 1) Multiplies the random number by the result of (180 - angleValue - 1). 
+    //This scales the random number to a range that depends on the value of angleValue.
+
+  //We added "+1" at the end to ensure that the second angle is atleast 1 degrees because 0 degrees does not make sense
+  const angle3 = 180 - angle1 - angle2;
+
+  // Calculate external angles
+  const extAngle1 = 180 - angle1;
+  const extAngle2 = 180 - angle2;
+  const extAngle3 = 180 - angle3;
+
+  // Display results
+  document.getElementById("angle1").textContent = angle1 + "°";
+  document.getElementById("angle2").textContent = angle2 + "°";
+  document.getElementById("angle3").textContent = angle3 + "°";
+  document.getElementById("ext-angle1").textContent = extAngle1 + "°";
+  document.getElementById("ext-angle2").textContent = extAngle2 + "°";
+  document.getElementById("ext-angle3").textContent = extAngle3 + "°";
+}
