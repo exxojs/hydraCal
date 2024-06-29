@@ -17,6 +17,7 @@
                 <option value="cal">Calculator</option>
                 <option value="slope">Slope</option>
                 <option value="M">Center Dataset</option>
+                <option value="Scalene">Scalene</option>
               </select>
               
         </div>
@@ -87,6 +88,36 @@
                             <div id="resultMMM"> </div>
                           </div>
                          </form>
+                    </div>
+
+                    <div class="triangle">
+                        <h1>Triangle Angle Calculator</h1>
+                        <form>
+                            <div class="gyat">
+                                <p>Enter the angle value of the Scalene as an integer</p>
+                            <input type="number" id="angle" min="1" max="178" required placeholder="EX: 1, 60, 178">
+                            </div>
+                            
+                            <div class="buttonSlope">
+                                <button type="button" onclick="calculateAngles()">Calculate</button>
+                            </div>
+                            
+                            <div id="results">
+                            <p>Inner Angles:</p>
+                            <ul id="inner-angles">
+                            <li>Interior Angle 1: <span id="angle1"></span></li>
+                            <li>Interior Angle 2: <span id="angle2"></span></li>
+                            <li>Interior Angle 3: <span id="angle3"></span></li>
+                            </ul>
+                            <p>External Angles:</p>
+                            <ul id="external-angles">
+                            <li>Exterior Angle 1: <span id="ext-angle1"></span></li>
+                            <li>Exterior Angle 2: <span id="ext-angle2"></span></li>
+                            <li>Exterior Angle 3: <span id="ext-angle3"></span></li>
+                            </ul>
+                        </div>
+                        </form>
+                        
                     </div>
                    
                 </div>
